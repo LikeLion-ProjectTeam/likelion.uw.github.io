@@ -1,0 +1,20 @@
+.gallery {
+    padding: 50px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  .gallery h1 {
+    color: #fd7e14;;
+    margin-bottom: 20px;
+  }
+  .gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .gallery-grid img {
+    border-radius: 8px;
+    max-width: 150px;
+    height: auto;
+  }
+  

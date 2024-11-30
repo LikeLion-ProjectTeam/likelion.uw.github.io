@@ -1,0 +1,18 @@
+.team {
+    padding: 50px;
+    background-color: #e9ecef;
+    text-align: center;
+  }
+  .team h1 {
+    color: #fd7e14;
+    margin-bottom: 20px;
+  }
+  .team ul {
+    list-style: none;
+    padding: 0;
+  }
+  .team li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  

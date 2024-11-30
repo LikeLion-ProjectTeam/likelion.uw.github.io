@@ -1,0 +1,24 @@
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #fd7e14;;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  .header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .header nav ul li {
+    margin: 0 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .header nav ul li:hover {
+    color: #f1f1f1;
+  }
+  

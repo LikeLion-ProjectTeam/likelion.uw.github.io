@@ -1,0 +1,14 @@
+.story {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+  }
+  .story h1 {
+    color: #fd7e14;
+    margin-bottom: 20px;
+  }
+  .story p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
