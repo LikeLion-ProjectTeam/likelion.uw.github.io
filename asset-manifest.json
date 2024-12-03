@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/UWM/static/css/main.fe58d9ad.css",
-    "main.js": "/UWM/static/js/main.b723645b.js",
+    "main.css": "/UWM/static/css/main.3fb85529.css",
+    "main.js": "/UWM/static/js/main.c34e6665.js",
     "static/js/453.2faba92f.chunk.js": "/UWM/static/js/453.2faba92f.chunk.js",
+    "static/media/chaewon.png": "/UWM/static/media/chaewon.3cfa00b3c205ea1113bd.png",
+    "static/media/sooa.png": "/UWM/static/media/sooa.2d39db84980ef3d4c215.png",
+    "static/media/youngjun.png": "/UWM/static/media/youngjun.3e8c936c91626cba4cb8.png",
+    "static/media/seohee.png": "/UWM/static/media/seohee.fd55125701de0d4c1e2e.png",
+    "static/media/taenam.png": "/UWM/static/media/taenam.d5387676cb8358ed4db5.png",
+    "static/media/nayun.png": "/UWM/static/media/nayun.f834af22a69f54be23d1.png",
+    "static/media/sunghyeon.png": "/UWM/static/media/sunghyeon.86f1b9f6de8abc727691.png",
+    "static/media/Sijun.png": "/UWM/static/media/Sijun.4cefcba919478d4956db.png",
     "index.html": "/UWM/index.html",
-    "main.fe58d9ad.css.map": "/UWM/static/css/main.fe58d9ad.css.map",
-    "main.b723645b.js.map": "/UWM/static/js/main.b723645b.js.map",
+    "main.3fb85529.css.map": "/UWM/static/css/main.3fb85529.css.map",
+    "main.c34e6665.js.map": "/UWM/static/js/main.c34e6665.js.map",
     "453.2faba92f.chunk.js.map": "/UWM/static/js/453.2faba92f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe58d9ad.css",
-    "static/js/main.b723645b.js"
+    "static/css/main.3fb85529.css",
+    "static/js/main.c34e6665.js"
   ]
 }
