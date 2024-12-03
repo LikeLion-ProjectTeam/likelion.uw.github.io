@@ -66,6 +66,53 @@ const Gallery = () => {
                     />
                 )}
             </Modal>
+
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                contentLabel="Image Modal"
+                className="modal"
+                overlayClassName="overlay"
+            >
+                <button onClick={closeModal} className="close-button">
+                    &times;
+                </button>
+                <button
+                    onClick={() =>
+                        setCurrentImage(
+                            images[
+                                (images.indexOf(currentImage) +
+                                    images.length -
+                                    1) %
+                                    images.length
+                            ]
+                        )
+                    }
+                    className="prev-button"
+                >
+                    ‹
+                </button>
+                {currentImage && (
+                    <img
+                        src={currentImage}
+                        alt="Enlarged view"
+                        className="modal-image"
+                    />
+                )}
+                <button
+                    onClick={() =>
+                        setCurrentImage(
+                            images[
+                                (images.indexOf(currentImage) + 1) %
+                                    images.length
+                            ]
+                        )
+                    }
+                    className="next-button"
+                >
+                    ›
+                </button>
+            </Modal>
         </div>
     );
 };
