@@ -1,14 +1,90 @@
 .about-us {
-    padding: 50px;
-    background-color: #f9f9f9;
-    text-align: center;
-  }
-  .about-us h1 {
+    width: 100%;
+    min-height: 100vh;
+    background: #ffffff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about-us-content {
+    max-width: 850px;
+    padding: 80px;
+    margin: 0 auto;
+}
+
+.about-us h1 {
     color: #fd7e14;
+    font-size: 3.5rem;
+    margin-bottom: 0px;
+    position: relative;
+    display: inline-block;
+}
+
+.about-us h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 3px;
+    background-color: #fd7e14;
+}
+
+.typed-container {
+    width: 900px;
+    margin: 0 0 -20px 0;
+}
+
+.typed-container h2 {
+    font-size: 6rem;
+    color: #333;
+    margin: 0;
+    line-height: 2;
+}
+
+.highlight {
+    color: #000000;
+    font-weight: bold;
+}
+
+.typed-text {
+    color: #c5050c;
+    font-weight: bold;
+}
+
+.description {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro {
+    font-size: 1.8rem;
+    color: #333;
     margin-bottom: 20px;
-  }
-  .about-us p {
+    text-align: center;
+}
+
+.slogan {
+    font-size: 1.5rem;
+    color: #000000;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.main-text {
     font-size: 1.2rem;
     color: #555;
-  }
-  
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.end-text {
+    font-size: 2rem;
+    color: #fd7e14;
+    font-weight: 500;
+    text-align: center;
+}
