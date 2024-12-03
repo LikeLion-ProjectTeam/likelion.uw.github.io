@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Archive_n_Project.css";
 
-import Image1 from "../Images/2024ProjectTeam.png";
+import Image1 from "../Images/2024ProjectTeam.jpg";
 import Hackathon_Placeholder from "../Images/Hackathon_Placeholder.png";
 import ideathon from "../Images/ideathon.png";
 
