@@ -7,7 +7,7 @@ const Header = () => {
 
   const scrollToSection = (id) => {
     if (location.pathname !== "/") {
-      console.error(`Cannot scroll to "${id}" because you are not on the main page.`);
+      window.location.href = `/#${id}`;
       return;
     }
 
