@@ -22,7 +22,9 @@ const AboutUs = () => {
                     </h2>
                 </div>
                 <div className="description">
-                    <p className="intro">Introducing LikeLion UW-Madison</p>
+                    <p className="intro">
+                        Introducing LikeLion <span>UW-Madison</span>
+                    </p>
                     <h2 className="slogan">Create • Collaborate • Conquer</h2>
                     <p className="main-text">
                         LikeLion UW-Madison is a supportive community dedicated
