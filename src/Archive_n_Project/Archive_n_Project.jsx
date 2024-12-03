@@ -9,7 +9,7 @@ const Archive_n_Project = () => {
       <p>Some projects and competition archives by our members</p>
       <p>To see more detailed archives and other projects / competitions, click below</p>
       <Link to="/archive-projects" className="archivelink">
-        Archives & Projects 
+        Archives & Projects
       </Link>
     </div>
   );

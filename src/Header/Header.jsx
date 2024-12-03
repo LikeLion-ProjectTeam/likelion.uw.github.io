@@ -1,9 +1,22 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
+  const location = useLocation();
+
   const scrollToSection = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    if (location.pathname !== "/") {
+      console.error(`Cannot scroll to "${id}" because you are not on the main page.`);
+      return;
+    }
+
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.error(`Element with id "${id}" not found.`);
+    }
   };
 
   return (
