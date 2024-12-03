@@ -3,7 +3,7 @@ import "./Story.css";
 import { FaUniversity, FaRocket, FaHandshake } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
 
-const OurStory = () => {
+const Story = () => {
     return (
         <div className="our-story">
             <div className="our-story-content">
