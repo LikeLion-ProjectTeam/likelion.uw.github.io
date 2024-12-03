@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/UWM/static/css/main.3fb85529.css",
-    "main.js": "/UWM/static/js/main.c34e6665.js",
+    "main.css": "/UWM/static/css/main.c417ce29.css",
+    "main.js": "/UWM/static/js/main.64c6b0de.js",
     "static/js/453.2faba92f.chunk.js": "/UWM/static/js/453.2faba92f.chunk.js",
     "static/media/chaewon.png": "/UWM/static/media/chaewon.3cfa00b3c205ea1113bd.png",
     "static/media/sooa.png": "/UWM/static/media/sooa.2d39db84980ef3d4c215.png",
     "static/media/youngjun.png": "/UWM/static/media/youngjun.3e8c936c91626cba4cb8.png",
     "static/media/seohee.png": "/UWM/static/media/seohee.fd55125701de0d4c1e2e.png",
     "static/media/taenam.png": "/UWM/static/media/taenam.d5387676cb8358ed4db5.png",
+    "static/media/ideathon.png": "/UWM/static/media/ideathon.1ad0f246005bc5300233.png",
     "static/media/nayun.png": "/UWM/static/media/nayun.f834af22a69f54be23d1.png",
+    "static/media/2024ProjectTeam.jpg": "/UWM/static/media/2024ProjectTeam.09228ca00614ddf1e73c.jpg",
     "static/media/sunghyeon.png": "/UWM/static/media/sunghyeon.86f1b9f6de8abc727691.png",
     "static/media/Sijun.png": "/UWM/static/media/Sijun.4cefcba919478d4956db.png",
+    "static/media/Hackathon_Placeholder.png": "/UWM/static/media/Hackathon_Placeholder.fc5f8adb489518defa7d.png",
     "index.html": "/UWM/index.html",
-    "main.3fb85529.css.map": "/UWM/static/css/main.3fb85529.css.map",
-    "main.c34e6665.js.map": "/UWM/static/js/main.c34e6665.js.map",
+    "main.c417ce29.css.map": "/UWM/static/css/main.c417ce29.css.map",
+    "main.64c6b0de.js.map": "/UWM/static/js/main.64c6b0de.js.map",
     "453.2faba92f.chunk.js.map": "/UWM/static/js/453.2faba92f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fb85529.css",
-    "static/js/main.c34e6665.js"
+    "static/css/main.c417ce29.css",
+    "static/js/main.64c6b0de.js"
   ]
 }
