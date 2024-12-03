@@ -4,7 +4,7 @@ import Header from "./Header/Header";
 import AboutUs from "./AboutUs/AboutUs";
 import Story from "./Story/Story";
 import Archive_n_Project from "./Archive_n_Project/Archive_n_Project";
-import ArchiveProjectsPage from "./Archive_n_Project/ArchiveProjectsPage";
+import Linked_Page_Archives from "./Archive_n_Project/Linked_Page_Archives";
 import Team from "./Team/Team";
 import Gallery from "./Gallery/Gallery";
 import Contact from "./Contact/Contact";
@@ -43,7 +43,7 @@ function App() {
             }
           />
           {/* Archive Projects Page */}
-          <Route path="/archive-projects" element={<ArchiveProjectsPage />} />
+          <Route path="/archive-projects" element={<Linked_Page_Archives />} />
           {/* Redirect unknown paths to Home Page */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
