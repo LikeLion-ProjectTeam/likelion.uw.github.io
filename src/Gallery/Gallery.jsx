@@ -30,89 +30,75 @@ const Gallery = () => {
 
     return (
         <div className="gallery">
-            <h1>Gallery</h1>
-            <p>동아리 사진들</p>
-            <Masonry
-                breakpointCols={3}
-                className="gallery-grid"
-                columnClassName="gallery-grid_column"
-            >
-                {images.map((image, index) => (
-                    <div
-                        key={index}
-                        className="gallery-item"
-                        onClick={() => openModal(image)}
+            <div className="gallery-content">
+                <h1>Gallery</h1>
+
+                <Masonry
+                    breakpointCols={3}
+                    className="gallery-grid"
+                    columnClassName="gallery-grid_column"
+                >
+                    {images.map((image, index) => (
+                        <div
+                            key={index}
+                            className="gallery-item"
+                            onClick={() => openModal(image)}
+                        >
+                            <img
+                                src={image}
+                                alt={`Gallery item ${index + 1}`}
+                            />
+                        </div>
+                    ))}
+                </Masonry>
+
+                <Modal
+                    isOpen={modalIsOpen}
+                    onRequestClose={closeModal}
+                    contentLabel="Image Modal"
+                    className="modal"
+                    overlayClassName="overlay"
+                >
+                    <button onClick={closeModal} className="close-button">
+                        &times;
+                    </button>
+                    <button
+                        onClick={() =>
+                            setCurrentImage(
+                                images[
+                                    (images.indexOf(currentImage) +
+                                        images.length -
+                                        1) %
+                                        images.length
+                                ]
+                            )
+                        }
+                        className="prev-button"
                     >
-                        <img src={image} alt={`Gallery item ${index + 1}`} />
-                    </div>
-                ))}
-            </Masonry>
-
-            <Modal
-                isOpen={modalIsOpen}
-                onRequestClose={closeModal}
-                contentLabel="Image Modal"
-                className="modal"
-                overlayClassName="overlay"
-            >
-                <button onClick={closeModal} className="close-button">
-                    &times;
-                </button>
-                {currentImage && (
-                    <img
-                        src={currentImage}
-                        alt="Enlarged view"
-                        className="modal-image"
-                    />
-                )}
-            </Modal>
-
-            <Modal
-                isOpen={modalIsOpen}
-                onRequestClose={closeModal}
-                contentLabel="Image Modal"
-                className="modal"
-                overlayClassName="overlay"
-            >
-                <button onClick={closeModal} className="close-button">
-                    &times;
-                </button>
-                <button
-                    onClick={() =>
-                        setCurrentImage(
-                            images[
-                                (images.indexOf(currentImage) +
-                                    images.length -
-                                    1) %
-                                    images.length
-                            ]
-                        )
-                    }
-                    className="prev-button"
-                >
-                    ‹
-                </button>
-                {currentImage && (
-                    <img
-                        src={currentImage}
-                        alt="Enlarged view"
-                        className="modal-image"
-                    />
-                )}
-                <button
-                    onClick={() =>
-                        setCurrentImage(
-                            images[
-                                (images.indexOf(currentImage) + 1) %
-                                    images.length
-                            ]
-                        )
-                    }
-                    className="next-button"
-                >
-                    ›
-                </button>
-            </Modal>
+                        ‹
+                    </button>
+                    {currentImage && (
+                        <img
+                            src={currentImage}
+                            alt="Enlarged view"
+                            className="modal-image"
+                        />
+                    )}
+                    <button
+                        onClick={() =>
+                            setCurrentImage(
+                                images[
+                                    (images.indexOf(currentImage) + 1) %
+                                        images.length
+                                ]
+                            )
+                        }
+                        className="next-button"
+                    >
+                        ›
+                    </button>
+                </Modal>
+            </div>
         </div>
     );
 };
