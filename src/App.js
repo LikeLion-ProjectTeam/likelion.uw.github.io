@@ -13,6 +13,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        {/* Header outside of Routes to display on all pages */}
         <Header />
         <Routes>
           {/* Default Home Page */}
