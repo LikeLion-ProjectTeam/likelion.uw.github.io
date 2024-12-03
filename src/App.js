@@ -4,7 +4,7 @@ import Header from "./Header/Header";
 import AboutUs from "./AboutUs/AboutUs";
 import Story from "./Story/Story";
 import Archive_n_Project from "./Archive_n_Project/Archive_n_Project";
-import ArchiveProjectsPage from "./Archive_n_Projects/ArchiveProjectsPage";
+import ArchiveProjectsPage from "./Archive_n_Project/ArchiveProjectsPage";
 import Team from "./Team/Team";
 import Gallery from "./Gallery/Gallery";
 import Contact from "./Contact/Contact";
