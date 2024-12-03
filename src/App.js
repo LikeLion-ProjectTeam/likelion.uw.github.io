@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./Header/Header";
 import AboutUs from "./AboutUs/AboutUs";
 import Story from "./Story/Story";
@@ -15,7 +15,7 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          {/* Home Page */}
+          {/* Default Home Page */}
           <Route
             path="/"
             element={
@@ -43,6 +43,8 @@ function App() {
           />
           {/* Archive Projects Page */}
           <Route path="/archive-projects" element={<ArchiveProjectsPage />} />
+          {/* Redirect unknown paths to Home Page */}
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </Router>
