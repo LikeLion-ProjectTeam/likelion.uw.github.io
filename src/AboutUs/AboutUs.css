@@ -75,8 +75,27 @@
     font-size: 1.5rem;
     color: #000000;
     letter-spacing: 2px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-align: center;
+}
+
+.slogan-word {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.slogan-word:hover {
+    color: #fd7e14;
+    transform: translateY(-3px);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bullet {
+    color: #999;
+    margin: 0 10px;
+    user-select: none;
 }
 
 .main-text {

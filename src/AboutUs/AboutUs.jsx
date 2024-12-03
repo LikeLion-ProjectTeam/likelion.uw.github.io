@@ -25,7 +25,13 @@ const AboutUs = () => {
                     <p className="intro">
                         Introducing LikeLion <span>UW-Madison</span>
                     </p>
-                    <h2 className="slogan">Create • Collaborate • Conquer</h2>
+                    <h2 className="slogan">
+                        <span className="slogan-word">Create</span>
+                        <span className="bullet">•</span>
+                        <span className="slogan-word">Collaborate</span>
+                        <span className="bullet">•</span>
+                        <span className="slogan-word">Conquer</span>
+                    </h2>
                     <p className="main-text">
                         LikeLion UW-Madison is a supportive community dedicated
                         to empowering individuals by providing the resources,
