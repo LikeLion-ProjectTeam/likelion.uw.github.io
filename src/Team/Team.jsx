@@ -3,7 +3,7 @@ import "./Team.css";
 import { FaLinkedin } from "react-icons/fa";
 
 import chaewon from "../Assets/Profile/chaewon.png";
-import sijun from "../Assets/Profile/sijun.png";
+import sijun from "../Assets/Profile/Sijun.png";
 import youngjun from "../Assets/Profile/youngjun.png";
 import taenam from "../Assets/Profile/taenam.png";
 import sunghyeon from "../Assets/Profile/sunghyeon.png";

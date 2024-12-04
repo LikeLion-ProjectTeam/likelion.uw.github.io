@@ -14,7 +14,7 @@
 }
 
 .about-us h1 {
-    color: #fd7e14;
+    color: #c5050c;
     font-size: 3.5rem;
     margin-bottom: 0px;
     position: relative;
@@ -29,7 +29,7 @@
     transform: translateX(-50%);
     width: 200px;
     height: 3px;
-    background-color: #fd7e14;
+    background-color: #c5050c;
 }
 
 .typed-container {

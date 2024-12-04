@@ -6,7 +6,6 @@ const AboutUs = () => {
     return (
         <div className="about-us">
             <div className="about-us-content">
-                <h1>About Us</h1>
                 <div className="typed-container">
                     <h2>
                         <span className="highlight">Possibility</span> to{" "}
