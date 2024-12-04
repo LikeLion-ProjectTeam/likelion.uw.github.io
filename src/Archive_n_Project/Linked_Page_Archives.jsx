@@ -67,11 +67,29 @@ const LinkedPageArchives = () => {
           style={{ cursor: "pointer", marginTop: "10px" }}
           onClick={() => toggleSection("section2")}
         >
-          {openSections.section2 ? "▼" : "▶"} Another Section
+          {openSections.section2 ? "▼" : "▶"} Ideathon 2024 Projects
         </button>
         {openSections.section2 && (
           <ul>
-            <li>Details for another section...</li>
+            <li>
+              <h3>Reconnection 다시: 봄</h3>
+              <h4>Team: Moment</h4>
+              <h5>Members: Leo Jeong, Alex Lee, Ikjoo Oh, Saean Shin, Sean Baek</h5>
+              <p>An application tailored for career matching, government assistance, and community/networking services for senior citizens.</p>
+              <p>Frontend: React Native, Backend: Node.js, Database: MongoDB</p>
+              <img src="reconnectionthumbnail.jpeg" alt="Project Image" />
+              <a href="#">Learn More</a>
+            </li>
+
+            <li>
+              <h3>EcoBoom</h3>
+              <h4>Team: EcoBadger</h4>
+              <h5>Members: Beomseong Kim, Jim Kim, Yunji Lee, Hyoungwoo L</h5>
+              <p>An application tailored for career matching, government assistance, and community/networking services for senior citizens.</p>
+              <p>Frontend: React Native, Backend: Node.js, Database: MongoDB</p>
+              <img src="reconnectionthumbnail.jpeg" alt="Project Image" />
+              <a href="#">Learn More</a>
+            </li>
           </ul>
         )}
       </div>
