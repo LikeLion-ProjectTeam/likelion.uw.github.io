@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 
+import ecoboom from "../Images/ecoboom_thumbnail.jpeg";
+import reconnection from "../Images/reconnection_thumbnail.jpeg";
+import cozycottage from "../Images/cozycottage_thumbnail.jpeg";
+
 const LinkedPageArchives = () => {
   const [openSections, setOpenSections] = useState({
     section1: false,
@@ -128,36 +132,35 @@ const LinkedPageArchives = () => {
         {openSections.section2 && (
           <ul style={{ listStyle: "none", padding: "10px", margin: 0 }}>
             <li style={{ marginBottom: "20px", textAlign: "center" }}>
-              <h3>Reconnection 다시: 봄</h3>
-              <h4>Team: Moment</h4>
+              <h3>EcoBoom</h3>
+              <h4>Team: EcoBadger</h4>
               <h5>
                 Members: Leo Jeong, Alex Lee, Ikjoo Oh, Saean Shin, Sean Baek
               </h5>
               <p>
-                An application tailored for career matching, government
-                assistance, and community/networking services for senior
-                citizens.
-              </p>
-              <p>
-                Frontend: React Native, Backend: Node.js, Database: MongoDB
+              Recycling focused application including a reward system, business partnerships, premium servces, and data insight. 
               </p>
               <img
-                src="reconnectionthumbnail.jpeg"
+                src={ecoboom}
                 alt="Project Image"
                 style={{
-                  maxWidth: "100%",
+                  maxWidth: "50%",
                   height: "auto",
                   margin: "10px 0",
                 }}
               />
-              <a href="#">Learn More</a>
+              <a href="#" 
+                 style={{
+                  display: "block",
+                  marginTop: "10px"
+                 }}>Learn More</a>
             </li>
 
             <li style={{ marginBottom: "20px", textAlign: "center" }}>
-              <h3>EcoBoom</h3>
-              <h4>Team: EcoBadger</h4>
+              <h3>Reconnection 다시: 봄</h3>
+              <h4>Team: Moment</h4>
               <h5>
-                Members: Beomseong Kim, Jim Kim, Yunji Lee, Hyoungwoo L
+                Members: Beomseong Kim, Jim Kim, Yunji Lee, Hyoungwoo Kim, Hari Kang
               </h5>
               <p>
                 An application tailored for career matching, government
@@ -168,15 +171,44 @@ const LinkedPageArchives = () => {
                 Frontend: React Native, Backend: Node.js, Database: MongoDB
               </p>
               <img
-                src="reconnectionthumbnail.jpeg"
+                src={reconnection}
                 alt="Project Image"
                 style={{
-                  maxWidth: "100%",
+                  maxWidth: "50%",
                   height: "auto",
                   margin: "10px 0",
                 }}
               />
-              <a href="#">Learn More</a>
+              <a href="#" 
+                 style={{
+                  display: "block",
+                  marginTop: "10px"
+                 }}>Learn More</a>
+            </li>
+
+            <li style={{ marginBottom: "20px", textAlign: "center" }}>
+              <h3>Cozy Cottage</h3>
+              <h4>Team: Unikun</h4>
+              <h5>
+                Members: Daniel Park, Chaewon Yoo, Seohee Choy, Nayun Kang, Sooa Cho
+              </h5>
+              <p>
+                Mental health services utilizing AI, incorporating a hexagonal model for diagnoses and treatment plans.
+              </p>
+              <img
+                src={cozycottage}
+                alt="Project Image"
+                style={{
+                  maxWidth: "50%",
+                  height: "auto",
+                  margin: "10px 0",
+                }}
+              />
+              <a href="#" 
+                 style={{
+                  display: "block",
+                  marginTop: "10px"
+                 }}>Learn More</a>
             </li>
           </ul>
         )}
