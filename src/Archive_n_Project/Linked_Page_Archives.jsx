@@ -5,7 +5,6 @@ const LinkedPageArchives = () => {
     section1: false,
     section1_1: false,
     section1_2: false,
-    section1_3: false,
     section2: false,
   });
 
@@ -28,31 +27,28 @@ const LinkedPageArchives = () => {
         </button>
         {openSections.section1 && (
           <ul>
-            <li>1.1 About this chapter</li>
-            <li>1.2 The Division Algorithm</li>
-            <li>1.3 Prime factorizations</li>
-            <li>
-              1.4 Floor and ceiling functions
-              <ul>
-                <li>1.4.1 Computing the floor and ceiling functions</li>
-                <li>1.4.2 Floor and ceiling functions</li>
-                <li>1.4.3 Floor and ceiling functions applied</li>
-              </ul>
-            </li>
-            <li>1.5 Logarithms and exponents</li>
-            <li>1.6 Number representation (Optional)</li>
             <li>
               <button
                 style={{ cursor: "pointer", marginTop: "5px" }}
                 onClick={() => toggleSection("section1_1")}
               >
-                {openSections.section1_1 ? "▼" : "▶"} Additional Resources
+                {openSections.section1_1 ? "▼" : "▶"} 2024 project team 
               </button>
               {openSections.section1_1 && (
                 <ul>
-                  <li>1.6.1 Extra Notes</li>
-                  <li>1.6.2 Example Problems</li>
-                  <li>1.6.3 Helpful Links</li>
+                  <li>2024/12/03 project team meeting log</li>
+                  <li>그리고 이제 이런식으로 더 뭐 추가할 예정</li>
+                </ul>
+              )}
+              <button
+                style={{ cursor: "pointer", marginTop: "5px" }}
+                onClick={() => toggleSection("section1_1")}
+              >
+                {openSections.section1_2 ? "▼" : "▶"} 2025 project team 
+              </button>
+              {openSections.section1_1 && (
+                <ul>
+                  <li> TBD</li>
                 </ul>
               )}
             </li>
