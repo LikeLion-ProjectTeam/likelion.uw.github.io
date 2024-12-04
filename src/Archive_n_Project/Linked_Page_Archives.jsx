@@ -11,7 +11,7 @@ const LinkedPageArchives = () => {
   const toggleSection = (section) => {
     setOpenSections((prev) => ({
       ...prev,
-      [section]: !prev[section],
+      [section]: !prev[section], // Toggle only the clicked section
     }));
   };
 
@@ -27,12 +27,13 @@ const LinkedPageArchives = () => {
         </button>
         {openSections.section1 && (
           <ul>
+            {/* Project Team 2024 */}
             <li>
               <button
                 style={{ cursor: "pointer", marginTop: "5px" }}
                 onClick={() => toggleSection("section1_1")}
               >
-                {openSections.section1_1 ? "▼" : "▶"} 2024 project team 
+                {openSections.section1_1 ? "▼" : "▶"} 2024 project team
               </button>
               {openSections.section1_1 && (
                 <ul>
@@ -40,15 +41,19 @@ const LinkedPageArchives = () => {
                   <li>그리고 이제 이런식으로 더 뭐 추가할 예정</li>
                 </ul>
               )}
+            </li>
+
+            {/* Project Team 2025 */}
+            <li>
               <button
                 style={{ cursor: "pointer", marginTop: "5px" }}
-                onClick={() => toggleSection("section1_1")}
+                onClick={() => toggleSection("section1_2")}
               >
-                {openSections.section1_2 ? "▼" : "▶"} 2025 project team 
+                {openSections.section1_2 ? "▼" : "▶"} 2025 project team
               </button>
-              {openSections.section1_1 && (
+              {openSections.section1_2 && (
                 <ul>
-                  <li> TBD</li>
+                  <li>TBD</li>
                 </ul>
               )}
             </li>
