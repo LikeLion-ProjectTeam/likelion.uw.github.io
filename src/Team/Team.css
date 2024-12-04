@@ -83,6 +83,51 @@
   text-decoration: underline;
 }
 
+.team-buttons {
+  margin: 20px 0;
+}
+
+.team-buttons .teamButton {
+  margin: 10px;
+}
+
+.teamButton {
+  background: #c5050c;
+  border: 1px solid #c5050c;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  vertical-align: middle;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.teamButton:hover {
+  background-color: #FFFFFF;
+  color: #c5050c;
+}
+
+.teamButton:active {
+  opacity: 0.8;
+}
+
+.see-less {
+  margin: 30px 0; 
+}
+
 @media (max-width: 768px) {
   .team-card {
     width: 100%; 
