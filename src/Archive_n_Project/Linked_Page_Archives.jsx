@@ -16,7 +16,7 @@ const LinkedPageArchives = () => {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ padding: "20px", textAlign: "center" }}>
       {/* Projects */}
       <div>
         <button
