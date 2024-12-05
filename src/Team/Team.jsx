@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 // Import all profile images
 import chaewon from "../Assets/Profile/chaewon.png";
-import sijun from "../Assets/Profile/Sijun.png";
+import sijun from "../Assets/Profile/sijun.png";
 import youngjun from "../Assets/Profile/youngjun.png";
 import taenam from "../Assets/Profile/taenam.png";
 import sunghyeon from "../Assets/Profile/sunghyeon.png";
@@ -26,7 +26,7 @@ const Team = () => {
         President: [
           {
             name: "Beomseong Kim",
-            major: "B.S. Data Science",
+            major: "B.A. Data Science",
             year: "Senior",
             image: beomseong,
             linkedin: "https://www.linkedin.com/in/beomseong-kim/",
@@ -35,7 +35,7 @@ const Team = () => {
         VicePresident: [
           {
             name: "Hari Kang",
-            major: "B.S. Computer Science",
+            major: "B.S. Data Science",
             year: "Senior",
             image: hari,
             linkedin: "https://www.linkedin.com/in/hari-kang/",
@@ -81,7 +81,7 @@ const Team = () => {
           },
           {
             name: "Seohee Choy",
-            major: "B.S. Computer Science",
+            major: "B.S. Computer Science & Data Science",
             year: "Junior",
             image: seohee,
             linkedin: "https://www.linkedin.com/in/seohee-choy/",
@@ -110,15 +110,6 @@ const Team = () => {
             linkedin: "https://www.linkedin.com/in/june121284/",
           },
         ],
-        Designer: [
-          {
-            name: "Sooa Cho",
-            major: "B.S. Graphic Design",
-            year: "Junior",
-            image: sooa,
-            linkedin: "https://www.linkedin.com/in/cho-sooa-4005a0330/",
-          },
-        ],
         FullStack: [
           {
             name: "Nayun Kang",
@@ -126,6 +117,15 @@ const Team = () => {
             year: "Senior",
             image: nayun,
             linkedin: "https://www.linkedin.com/in/nayun-kang-a7a535317/",
+          },
+        ],
+        Designer: [
+          {
+            name: "Sooa Cho",
+            major: "B.S. Graphic Design",
+            year: "Junior",
+            image: sooa,
+            linkedin: "https://www.linkedin.com/in/cho-sooa-4005a0330/",
           },
         ],
       },
@@ -183,7 +183,7 @@ const Team = () => {
   const handleTeamClick = (team) => {
     setActiveTeam(activeTeam === team ? null : team);
   };
-
+  
   const getTeamTitle = (team) => {
     switch(team) {
       case "operation": return "Administrator";
@@ -193,103 +193,97 @@ const Team = () => {
       default: return "";
     }
   };
-
+  
   return (
     <div className="team">
-      <h1>Meet Our Team</h1>
-
-      <div className="team-horizontal-cards">
-        {["operation", "csTeam", "dsTeam", "lecTeam"].map((team) => (
-          <div
-            key={team}
-            className={`team-card ${activeTeam === team ? "active" : ""}`}
-            onClick={() => handleTeamClick(team)}
-          >
-            <h2>{getTeamTitle(team)}</h2>
-          </div>
-        ))}
+    <h1>Meet Our Team</h1>
+    
+    <div className="team-horizontal-cards">
+    {["operation", "csTeam", "dsTeam", "lecTeam"].map((team) => (
+      <div
+      key={team}
+      className={`team-card ${activeTeam === team ? "active" : ""}`}
+      onClick={() => handleTeamClick(team)}
+      >
+      <h2>{getTeamTitle(team)}</h2>
       </div>
-
-      {activeTeam && teamMembers[activeTeam] && (
-  <div className="team-tree-chart">
-    {/* 하나의 Team Card */}
-    <div className="team-card-root">
-      <div className="team-card">{getTeamTitle(activeTeam)}</div>
-      {/* Vertical Line from Team Card */}
-      <div className="line-down"></div>
+    ))}
     </div>
-    {/* 멤버 카드 연결 */}
-    <div className="role-container">
+    
+    {activeTeam && teamMembers[activeTeam] && (
+      <div className="team-tree-chart">
+      {/* 하나의 Team Card */}
+      <div className="team-card-root"> </div>
+      {/* 멤버 카드 연결 */}
+      <div className="role-container">
       {teamMembers[activeTeam].roles
         ? Object.entries(teamMembers[activeTeam].roles).map(([role, members]) => (
-            <div key={role} className="team-role-horizontal">
-              <div className="role-title">{role}</div>
-              <div className="role-members-horizontal">
-                {members.map((member, index) => (
-                  <div key={index} className="team-profile-card">
-                    {member.image ? (
-                      <img
-                        src={member.image}
-                        alt={member.name}
-                        className="profile-photo"
-                      />
-                    ) : (
-                      <div className="placeholder-photo">No Image</div>
-                    )}
-                    <h4>{member.name}</h4>
-                    <p>
-                      {member.major} ({member.year})
-                    </p>
-                    {member.linkedin && (
-                      <a
-                        href={member.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="linkedin-link"
-                      >
-                        <FaLinkedin size={20} />
-                      </a>
-                    )}
-                  </div>
-                ))}
-              </div>
+          <div key={role} className="team-role-horizontal">
+            <div className="role-title">{role}</div>
+            <div className="role-members-horizontal">
+              {members.map((member, index) => (
+                <div key={index} className="team-profile-card">
+                  {member.image ? (
+                    <img
+                    src={member.image}
+                    alt={member.name}
+                    className="profile-photo"
+                    />
+                  ) : (
+                    <div className="placeholder-photo">No Image</div>
+                  )}
+                  <h4>{member.name}</h4>
+                  <p>
+                    {member.major} ({member.year})
+                  </p>
+                  {member.linkedin && (
+                    <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="linkedin-link"
+                    >
+                    <FaLinkedin size={20} />
+                    </a>
+                  )}
+                </div>
+              ))}
             </div>
-          ))
+          </div>
+        ))
         : teamMembers[activeTeam].members.map((member, index) => (
-            <div key={index} className="team-profile-card">
-              {member.image ? (
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="profile-photo"
-                />
-              ) : (
-                <div className="placeholder-photo">No Image</div>
-              )}
-              <h4>{member.name}</h4>
-              <p>
-                {member.major} ({member.year})
-              </p>
-              {member.linkedin && (
-                <a
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="linkedin-link"
-                >
-                  <FaLinkedin size={20} />
-                </a>
-              )}
-            </div>
-          ))}
-    </div>
-  </div>
-)}
-
-
-
-    </div>
-  );
-};
-
-export default Team;
+          <div key={index} className="team-profile-card">
+          {member.image ? (
+            <img
+            src={member.image}
+            alt={member.name}
+            className="profile-photo"
+            />
+          ) : (
+            <div className="placeholder-photo">No Image</div>
+          )}
+          <h4>{member.name}</h4>
+          <p>
+          {member.major} ({member.year})
+          </p>
+          {member.linkedin && (
+            <a
+            href={member.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="linkedin-link"
+            >
+            <FaLinkedin size={20} />
+            </a>
+          )}
+          </div>
+        ))}
+        </div>
+        </div>
+      )}
+      
+      </div>
+    );
+  };
+  
+  export default Team;
