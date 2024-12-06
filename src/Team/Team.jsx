@@ -18,7 +18,7 @@ import saean from "../Assets/Profile/saean.png";
 import yunji from "../Assets/Profile/yunji.png";
 
 const Team = () => {
-  const [activeTeam, setActiveTeam] = useState(null);
+  const [activeTeam, setActiveTeam] = useState("operation");
   
   const teamMembers = {
     operation: {
@@ -246,7 +246,7 @@ const Team = () => {
                     rel="noopener noreferrer"
                     className="linkedin-link"
                     >
-                    <FaLinkedin size={20} />
+                    <FaLinkedin size={20} />  LinkedIn
                     </a>
                   )}
                 </div>
@@ -271,12 +271,12 @@ const Team = () => {
           </p>
           {member.linkedin && (
             <a
-            href={member.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="linkedin-link"
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="linkedin-link"
             >
-            <FaLinkedin size={20} />
+              <FaLinkedin size={20} /> LinkedIn
             </a>
           )}
           </div>
