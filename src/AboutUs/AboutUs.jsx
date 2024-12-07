@@ -7,7 +7,7 @@ const AboutUs = () => {
         <div className="about-us">
             <div className="about-us-content">
                 <div className="typed-container">
-                    <h2>
+                    <h1>
                         <span className="highlight">Possibility</span> to{" "}
                         <ReactTyped
                             strings={["Reality"]}
@@ -18,7 +18,7 @@ const AboutUs = () => {
                             loop
                             className="typed-text"
                         />
-                    </h2>
+                    </h1>
                 </div>
                 <div className="description">
                     <p className="intro">
