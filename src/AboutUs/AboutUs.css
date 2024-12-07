@@ -14,7 +14,7 @@
 }
 
 .typed-container {
-    width: 900px;
+    white-space: nowrap;
 }
 
 .typed-container h1 {
@@ -22,7 +22,6 @@
     color: #333;
     margin: 0;
     line-height: 1;
-    white-space: nowrap;
 }
 
 .highlight {
@@ -31,6 +30,8 @@
 }
 
 .typed-text {
+    display: inline-block;
+    min-width: 7ch;
     color: #c5050c;
     font-weight: bold;
 }
