@@ -48,9 +48,7 @@ const AboutUs = () => {
                         <button className="apply-button">
                             <span className="apply-word">Join Us</span>
                         </button>
-                        <p className="apply-message">
-                            Please wait for the next round!
-                        </p>
+                        <p className="apply-message">See you next round!</p>
                     </div>
                 </Fade>
             </main>
