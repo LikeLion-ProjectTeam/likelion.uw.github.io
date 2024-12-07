@@ -101,8 +101,20 @@
     justify-content: center;
 }
 
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .apply-button {
-    background: linear-gradient(135deg, #c5050c, #ffcc00);
+    background: linear-gradient(135deg, #c5050c, #fd7e14);
     padding: 15px 30px;
     margin: 10px;
     border: none;
@@ -114,6 +126,9 @@
 .apply-button:hover {
     transform: translateY(-3px);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #c5050c, #fd7e14, #c5050c);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
 }
 
 .apply-button:active {
@@ -121,7 +136,7 @@
 }
 
 .apply-word {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: #ffffff;
     display: inline-block;
