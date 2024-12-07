@@ -96,9 +96,12 @@
     text-align: center;
 }
 
-.about-us-buttons {
+.apply {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 @keyframes gradientAnimation {
@@ -145,6 +148,13 @@
 
 .apply-button:hover .apply-word {
     transform: scale(1.1);
+}
+
+.apply-message {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: #666;
+    text-align: center;
 }
 
 @media (max-width: 768px) {

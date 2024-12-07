@@ -44,10 +44,13 @@ const AboutUs = () => {
                             Let's bring your ideas to life, together!
                         </p>
                     </div>
-                    <div className="about-us-buttons">
+                    <div className="apply">
                         <button className="apply-button">
                             <span className="apply-word">Join Us</span>
                         </button>
+                        <p className="apply-message">
+                            Please wait for the next round!
+                        </p>
                     </div>
                 </Fade>
             </main>
