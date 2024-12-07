@@ -7,7 +7,7 @@ const AboutUs = () => {
     return (
         <div className="about-us">
             <main className="about-us-content">
-                <Fade cascade fraction={0.5} damping={0.2} delay={100}>
+                <Fade cascade fraction={0.2} damping={0.2} delay={100}>
                     <header className="typed-container">
                         <h1>
                             <span className="highlight">Possibility</span> to{" "}
