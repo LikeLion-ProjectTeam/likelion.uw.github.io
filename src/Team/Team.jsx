@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 // Import all profile images
 import chaewon from "../Assets/Profile/chaewon.png";
 import sijun from "../Assets/Profile/sijun.png";
-import youngjun from "../Assets/Profile/youngjun.png";
+import yeongjun from "../Assets/Profile/yeongjun.png";
 import taenam from "../Assets/Profile/taenam.png";
 import sunghyeon from "../Assets/Profile/sunghyeon.png";
 import sooa from "../Assets/Profile/sooa.png";
@@ -104,10 +104,10 @@ const Team = () => {
             linkedin: "https://www.linkedin.com/in/sijun-lee-8321a920a/",
           },
           {
-            name: "Youngjun Jeong",
+            name: "Yeongjun Jeong",
             major: "B.S. Computer Science",
             year: "Junior",
-            image: youngjun,
+            image: yeongjun,
             linkedin: "https://www.linkedin.com/in/june121284/",
           },
         ],
