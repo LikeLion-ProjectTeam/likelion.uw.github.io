@@ -6,9 +6,9 @@ import { Fade } from "react-awesome-reveal";
 const AboutUs = () => {
     return (
         <div className="about-us">
-            <div className="about-us-content">
+            <main className="about-us-content">
                 <Fade cascade fraction={0.5} damping={0.2} delay={100}>
-                    <div className="typed-container">
+                    <header className="typed-container">
                         <h1>
                             <span className="highlight">Possibility</span> to{" "}
                             <ReactTyped
@@ -21,7 +21,7 @@ const AboutUs = () => {
                                 className="typed-text"
                             />
                         </h1>
-                    </div>
+                    </header>
                     <div className="description">
                         <p className="intro">
                             Introducing LikeLion <span>UW-Madison</span>
@@ -44,8 +44,11 @@ const AboutUs = () => {
                             Let's bring your ideas to life, together!
                         </p>
                     </div>
+                    <div className="about-us-buttons">
+                        <button className="apply-button">Join Us</button>
+                    </div>
                 </Fade>
-            </div>
+            </main>
         </div>
     );
 };
