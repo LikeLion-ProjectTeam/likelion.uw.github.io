@@ -9,7 +9,7 @@
 
 .about-us-content {
     max-width: 850px;
-    padding: 190px;
+    padding: 200px;
     margin: 0 auto;
 }
 
@@ -31,7 +31,7 @@
 
 .typed-text {
     display: inline-block;
-    min-width: 7ch;
+    min-width: 6ch;
     color: #c5050c;
     font-weight: bold;
 }
@@ -97,7 +97,7 @@
 
 @media (max-width: 768px) {
     .typed-container h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .intro {

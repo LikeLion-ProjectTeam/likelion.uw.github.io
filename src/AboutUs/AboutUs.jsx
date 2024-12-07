@@ -32,13 +32,11 @@ const AboutUs = () => {
                         <span className="slogan-word">Conquer</span>
                     </h2>
                     <p className="main-text">
-                        LikeLion UW-Madison is a supportive community dedicated
-                        to empowering individuals by providing the resources,
-                        mentorship, and collaborative environment needed to turn
-                        your unique ideas into impactful realities. We believe
-                        in nurturing creativity, fostering teamwork, and giving
-                        you the tools to transform your vision into a successful
-                        project.
+                        LikeLion UW-Madison empowers individuals with resources,
+                        mentorship, and a collaborative environment to turn
+                        unique ideas into impactful realities. We foster
+                        creativity, teamwork, and the tools to bring your vision
+                        to life.
                     </p>
                     <p className="end-text">
                         Let's bring your ideas to life, together!
