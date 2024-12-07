@@ -45,7 +45,9 @@ const AboutUs = () => {
                         </p>
                     </div>
                     <div className="about-us-buttons">
-                        <button className="apply-button">Join Us</button>
+                        <button className="apply-button">
+                            <span className="apply-word">Join Us</span>
+                        </button>
                     </div>
                 </Fade>
             </main>
