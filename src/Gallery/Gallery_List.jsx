@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Masonry from "react-masonry-css";
 import Modal from "react-modal";
 import { Fade } from "react-awesome-reveal";
-import { Link } from "react-router-dom";
-import "./Gallery.css";
+import "./Gallery_List.css";
 
 import dotty from "../Assets/Gallery/dotty.jpg";
 import kickoff from "../Assets/Gallery/kickoff.jpg";
@@ -16,7 +15,7 @@ const images = [dotty, kickoff, likelionus, logo, lion, stadium];
 
 Modal.setAppElement("#root");
 
-const Gallery = () => {
+const Gallery_List = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [currentImage, setCurrentImage] = useState(null);
 
@@ -31,20 +30,20 @@ const Gallery = () => {
     };
 
     return (
-        <div className="gallery">
-            <div className="gallery-content">
+        <div className="gallery-list">
+            <div className="gallery-list-content">
                 <Fade cascade fraction={0.2} damping={0.2} delay={100}>
                     <h1>Gallery</h1>
 
                     <Masonry
                         breakpointCols={3}
-                        className="gallery-grid"
-                        columnClassName="gallery-grid_column"
+                        className="gallery-list-grid"
+                        columnClassName="gallery-list-grid_column"
                     >
                         {images.map((image, index) => (
                             <div
                                 key={index}
-                                className="gallery-item"
+                                className="gallery-list-item"
                                 onClick={() => openModal(image)}
                             >
                                 <img
@@ -101,13 +100,10 @@ const Gallery = () => {
                             ›
                         </button>
                     </Modal>
-                    <Link to="/Gallery_List" className="gallery-button">
-                        <span className="gallery-word">See more</span>
-                    </Link>
                 </Fade>
             </div>
         </div>
     );
 };
 
-export default Gallery;
+export default Gallery_List;
