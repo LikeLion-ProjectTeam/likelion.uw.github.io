@@ -15,7 +15,7 @@ const AboutUs = () => {
                                 strings={["REALITY"]}
                                 typeSpeed={100}
                                 backSpeed={80}
-                                backDelay={1000}
+                                backDelay={10000}
                                 startDelay={500}
                                 loop
                                 className="typed-text"
