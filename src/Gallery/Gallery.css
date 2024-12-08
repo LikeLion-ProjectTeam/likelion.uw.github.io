@@ -127,3 +127,49 @@
 .next-button:hover {
     opacity: 1;
 }
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gallery-button {
+    background: #fd7e14;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gallery-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #fd7e14, #fea861, #fd7e14);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+.gallery-button:active {
+    transform: translateY(1px);
+}
+
+.gallery-word {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffffff;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-button:hover .gallery-word {
+    transform: scale(1.1);
+}

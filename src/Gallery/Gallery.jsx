@@ -100,6 +100,9 @@ const Gallery = () => {
                             ›
                         </button>
                     </Modal>
+                    <button className="gallery-button">
+                        <span className="gallery-word">See more</span>
+                    </button>
                 </Fade>
             </div>
         </div>
