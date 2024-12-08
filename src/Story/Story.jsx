@@ -1,9 +1,9 @@
 import React from "react";
-import "./Story.css"; 
+import "./Story.css";
 import { FaUniversity, FaRocket, FaHandshake } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
 
-const OurStory = () => {
+const Story = () => {
     return (
         <div className="our-story">
             <div className="our-story-content">
@@ -12,15 +12,15 @@ const OurStory = () => {
                     <div className="story-icons">
                         <div className="icon-box">
                             <FaUniversity className="icon" />
-                            <p>Prestigious Universities</p>
+                            <p className="icon-text">Prestigious Universities</p>
                         </div>
                         <div className="icon-box">
                             <FaRocket className="icon" />
-                            <p>Nationwide Expansion</p>
+                            <p className="icon-text">Nationwide Expansion</p>
                         </div>
                         <div className="icon-box">
                             <FaHandshake className="icon" />
-                            <p>Collaborative Partnerships</p>
+                            <p className="icon-text">Collaborative Partnerships</p>
                         </div>
                     </div>
                 </Fade>
