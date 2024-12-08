@@ -1,32 +1,37 @@
 {
   "files": {
-    "main.css": "/UWM/static/css/main.ac4710b6.css",
-    "main.js": "/UWM/static/js/main.260ed670.js",
+    "main.css": "/UWM/static/css/main.b2d79e30.css",
+    "main.js": "/UWM/static/js/main.73f39bc0.js",
     "static/js/453.ee08e224.chunk.js": "/UWM/static/js/453.ee08e224.chunk.js",
     "static/media/stadium.jpg": "/UWM/static/media/stadium.c6c0ccb1b9c7a1681700.jpg",
     "static/media/chaewon.png": "/UWM/static/media/chaewon.3cfa00b3c205ea1113bd.png",
     "static/media/sooa.png": "/UWM/static/media/sooa.2d39db84980ef3d4c215.png",
-    "static/media/youngjun.png": "/UWM/static/media/youngjun.3e8c936c91626cba4cb8.png",
     "static/media/kickoff.jpg": "/UWM/static/media/kickoff.a7fd8226f14d24e635dc.jpg",
-    "static/media/seohee.png": "/UWM/static/media/seohee.fd55125701de0d4c1e2e.png",
+    "static/media/yeongjun.png": "/UWM/static/media/yeongjun.aa030a08604dcabeee13.png",
+    "static/media/seohee.png": "/UWM/static/media/seohee.9490dce28ce8400c44ff.png",
     "static/media/taenam.png": "/UWM/static/media/taenam.d5387676cb8358ed4db5.png",
+    "static/media/saean.png": "/UWM/static/media/saean.ed40882fb0e385f7debf.png",
     "static/media/ideathon.png": "/UWM/static/media/ideathon.1ad0f246005bc5300233.png",
     "static/media/nayun.png": "/UWM/static/media/nayun.f834af22a69f54be23d1.png",
     "static/media/dotty.jpg": "/UWM/static/media/dotty.3619280d6353cfe8d95c.jpg",
     "static/media/2024ProjectTeam.jpg": "/UWM/static/media/2024ProjectTeam.09228ca00614ddf1e73c.jpg",
+    "static/media/yunji.png": "/UWM/static/media/yunji.4f6a7c41d47270d8f693.png",
     "static/media/logo.jpeg": "/UWM/static/media/logo.fdbe3d70ffa978c26a23.jpeg",
     "static/media/sunghyeon.png": "/UWM/static/media/sunghyeon.86f1b9f6de8abc727691.png",
     "static/media/Sijun.png": "/UWM/static/media/Sijun.4cefcba919478d4956db.png",
     "static/media/Hackathon_Placeholder.png": "/UWM/static/media/Hackathon_Placeholder.fc5f8adb489518defa7d.png",
     "static/media/LikeLionUS.jpeg": "/UWM/static/media/LikeLionUS.fe3423d6bd7886a16813.jpeg",
     "static/media/lion.jpeg": "/UWM/static/media/lion.84b06039e8b576ba63e5.jpeg",
+    "static/media/hari.png": "/UWM/static/media/hari.b39c2522d9216e56acf1.png",
+    "static/media/beomseong.png": "/UWM/static/media/beomseong.4195b619fc4369e76dfd.png",
+    "static/media/hyoungwoo.png": "/UWM/static/media/hyoungwoo.92c6a3512ad6423255fd.png",
     "index.html": "/UWM/index.html",
-    "main.ac4710b6.css.map": "/UWM/static/css/main.ac4710b6.css.map",
-    "main.260ed670.js.map": "/UWM/static/js/main.260ed670.js.map",
+    "main.b2d79e30.css.map": "/UWM/static/css/main.b2d79e30.css.map",
+    "main.73f39bc0.js.map": "/UWM/static/js/main.73f39bc0.js.map",
     "453.ee08e224.chunk.js.map": "/UWM/static/js/453.ee08e224.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac4710b6.css",
-    "static/js/main.260ed670.js"
+    "static/css/main.b2d79e30.css",
+    "static/js/main.73f39bc0.js"
   ]
 }
