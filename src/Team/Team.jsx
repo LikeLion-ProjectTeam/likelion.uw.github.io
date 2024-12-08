@@ -174,7 +174,7 @@ const Team = () => {
         },
         {
           name: "Saean Shin",
-          major: "B.S. Computer Science",
+          major: "B.S. Data Science & Graphic Design",
           year: "Junior",
           image: saean,
           linkedin: "https://www.linkedin.com/in/saean-shin-ba93802b3/",
