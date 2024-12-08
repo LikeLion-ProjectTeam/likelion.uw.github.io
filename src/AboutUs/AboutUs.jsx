@@ -10,12 +10,12 @@ const AboutUs = () => {
                 <Fade cascade fraction={0.2} damping={0.2} delay={100}>
                     <header className="typed-container">
                         <h1>
-                            <span className="highlight">Possibility</span> to{" "}
+                            <span className="highlight">POSSIBILITY</span> TO{" "}
                             <ReactTyped
-                                strings={["Reality"]}
+                                strings={["REALITY"]}
                                 typeSpeed={100}
                                 backSpeed={80}
-                                backDelay={10000}
+                                backDelay={1000}
                                 startDelay={500}
                                 loop
                                 className="typed-text"

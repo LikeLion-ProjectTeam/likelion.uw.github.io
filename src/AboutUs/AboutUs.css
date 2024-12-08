@@ -17,11 +17,11 @@
     /* background: #666; */
     white-space: nowrap;
     text-align: center;
-    margin-left: -10px;
+    margin-left: -110px;
 }
 
 .typed-container h1 {
-    font-size: 6rem;
+    font-size: 5.8rem;
     color: #333;
     margin: 0;
     line-height: 1;
@@ -35,7 +35,7 @@
 .typed-text {
     text-align: justify;
     display: inline-block;
-    min-width: 6ch;
+    min-width: 8ch;
     color: #c5050c;
     font-weight: bold;
 }
@@ -99,6 +99,7 @@
     color: #fd7e14;
     font-weight: 500;
     text-align: center;
+    font-weight: bold;
 }
 
 .apply {
@@ -122,7 +123,7 @@
 }
 
 .apply-button {
-    background: linear-gradient(135deg, #c5050c, #fd7e14);
+    background: #fd7e14;
     padding: 15px 30px;
     margin: 10px;
     border: none;
@@ -134,7 +135,7 @@
 .apply-button:hover {
     transform: translateY(-3px);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(135deg, #c5050c, #fd7e14, #c5050c);
+    background: linear-gradient(135deg, #fd7e14, #fea861, #fd7e14);
     background-size: 200% 200%;
     animation: gradientAnimation 5s ease infinite;
 }
@@ -165,6 +166,7 @@
 @media (max-width: 768px) {
     .typed-container {
         margin-left: 0;
+        padding-left: 10px;
     }
 
     .typed-container h1 {
@@ -172,7 +174,7 @@
     }
 
     .typed-text {
-        min-width: 5.2ch;
+        min-width: 6.6ch;
     }
 
     .intro {
@@ -210,11 +212,11 @@
     }
 
     .typed-container h1 {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     .typed-text {
-        min-width: 5.3ch;
+        min-width: 6.6ch;
     }
 
     .intro {
