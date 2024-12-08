@@ -14,7 +14,10 @@
 }
 
 .typed-container {
+    /* background: #666; */
     white-space: nowrap;
+    text-align: center;
+    margin-left: -10px;
 }
 
 .typed-container h1 {
@@ -30,6 +33,7 @@
 }
 
 .typed-text {
+    text-align: justify;
     display: inline-block;
     min-width: 6ch;
     color: #c5050c;
@@ -86,7 +90,8 @@
     color: #555;
     line-height: 1.8;
     margin-bottom: 30px;
-    text-align: center;
+    text-align: justify;
+    /* text-align: center; */
 }
 
 .end-text {
@@ -158,8 +163,16 @@
 }
 
 @media (max-width: 768px) {
+    .typed-container {
+        margin-left: 0;
+    }
+
     .typed-container h1 {
         font-size: 3rem;
+    }
+
+    .typed-text {
+        min-width: 5.2ch;
     }
 
     .intro {
@@ -167,7 +180,7 @@
     }
 
     .slogan {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .main-text {
@@ -176,5 +189,59 @@
 
     .end-text {
         font-size: 1.5rem;
+    }
+
+    .apply-button {
+        padding: 10px 20px;
+    }
+
+    .apply-word {
+        font-size: 1.3rem;
+    }
+
+    .apply-message {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .typed-container {
+        margin-left: 0;
+    }
+
+    .typed-container h1 {
+        font-size: 2.4rem;
+    }
+
+    .typed-text {
+        min-width: 5.3ch;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+    }
+
+    .slogan {
+        font-size: 1rem;
+    }
+
+    .main-text {
+        font-size: 0.9rem;
+    }
+
+    .end-text {
+        font-size: 1.2rem;
+    }
+
+    .apply-button {
+        padding: 10px 20px;
+    }
+
+    .apply-word {
+        font-size: 1.1rem;
+    }
+
+    .apply-message {
+        font-size: 1.1rem;
     }
 }
