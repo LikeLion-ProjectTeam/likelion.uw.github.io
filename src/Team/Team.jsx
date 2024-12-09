@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 // Import all profile images
 import chaewon from "../Assets/Profile/chaewon.png";
 import yeongjun from "../Assets/Profile/yeongjun.png";
-import sijun from "../Assets/Profile/Sijun.png";
+import sijun from "../Assets/Profile/sijun.png";
 import taenam from "../Assets/Profile/taenam.png";
 import sunghyeon from "../Assets/Profile/sunghyeon.png";
 import sooa from "../Assets/Profile/sooa.png";
@@ -16,6 +16,7 @@ import hari from "../Assets/Profile/hari.png";
 import beomseong from "../Assets/Profile/beomseong.png";
 import saean from "../Assets/Profile/saean.png";
 import yunji from "../Assets/Profile/yunji.png";
+import ikjoo from "../Assets/Profile/ikjoo.png";
 
 const Team = () => {
   const [activeTeam, setActiveTeam] = useState("operation");
@@ -144,14 +145,14 @@ const Team = () => {
         {
           name: "Ikjoo Oh",
           major: "B.S. Data Science",
-          year: "Junior",
+          year: "Sophomore",
+          image: ikjoo,
         },
         {
           name: "Yunji Lee",
           major: "B.S. Data Science",
           year: "Junior",
           image: yunji,
-          // no linkedin
         },
       ],
     },
@@ -168,13 +169,13 @@ const Team = () => {
         {
           name: "Hyoungwoo Kim",
           major: "B.S. Data Science",
-          year: "Junior",
+          year: "Senior",
           image: hyoungwoo,
           linkedin: "https://www.linkedin.com/in/hyoungwoo-kim-a1b2b8240/",
         },
         {
           name: "Saean Shin",
-          major: "B.S. Computer Science",
+          major: "B.S. Data Science & Graphic Design",
           year: "Junior",
           image: saean,
           linkedin: "https://www.linkedin.com/in/saean-shin-ba93802b3/",
