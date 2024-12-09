@@ -16,6 +16,7 @@ import hari from "../Assets/Profile/hari.png";
 import beomseong from "../Assets/Profile/beomseong.png";
 import saean from "../Assets/Profile/saean.png";
 import yunji from "../Assets/Profile/yunji.png";
+import ikjoo from "../Assets/Profile/ikjoo.png";
 
 const Team = () => {
   const [activeTeam, setActiveTeam] = useState("operation");
@@ -144,14 +145,14 @@ const Team = () => {
         {
           name: "Ikjoo Oh",
           major: "B.S. Data Science",
-          year: "Junior",
+          year: "Sophomore",
+          image: ikjoo,
         },
         {
           name: "Yunji Lee",
           major: "B.S. Data Science",
           year: "Junior",
           image: yunji,
-          // no linkedin
         },
       ],
     },
