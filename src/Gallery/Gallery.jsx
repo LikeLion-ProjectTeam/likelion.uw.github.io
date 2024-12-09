@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Masonry from "react-masonry-css";
+import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
@@ -30,30 +29,29 @@ const Gallery = () => {
         setCurrentImage(null);
     };
 
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImageIndex(
+                (prevIndex) => (prevIndex + 1) % images.length
+            );
+        }, 5000);
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div className="gallery">
             <div className="gallery-content">
                 <Fade cascade fraction={0.2} damping={0.2} delay={100}>
                     <h1>Gallery</h1>
 
-                    <Masonry
-                        breakpointCols={3}
-                        className="gallery-grid"
-                        columnClassName="gallery-grid_column"
-                    >
-                        {images.map((image, index) => (
-                            <div
-                                key={index}
-                                className="gallery-item"
-                                onClick={() => openModal(image)}
-                            >
-                                <img
-                                    src={image}
-                                    alt={`Gallery item ${index + 1}`}
-                                />
-                            </div>
-                        ))}
-                    </Masonry>
+                    <img
+                        src={images[currentImageIndex]}
+                        alt={`Gallery image ${currentImageIndex + 1}`}
+                        className="slideshow-image"
+                        onClick={() => openModal(images[currentImageIndex])}
+                    />
 
                     <Modal
                         isOpen={modalIsOpen}
