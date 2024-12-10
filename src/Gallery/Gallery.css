@@ -69,23 +69,6 @@
     transform: scale(1.1);
 }
 
-/* .slider-container {
-    기존 코드를 반응형으로 변경
-    width: 500px;
-    height: 400px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    overflow: hidden;
-    aspect-ratio: 1;
-    background: #eca0a0;
-} */
-
-.gallery-content img {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-}
-
 .slick-prev,
 .slick-next {
     width: 40px;
@@ -110,6 +93,9 @@
 }
 
 .slick-slide img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
     display: block;
     margin: 0 auto;
 }
@@ -119,4 +105,34 @@
     /* margin-bottom: -10px; */
     width: 100%;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .slick-prev {
+        left: 350px;
+    }
+
+    .slick-next {
+        right: 350px;
+    }
+
+    .slick-slide img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slick-prev {
+        left: 400px;
+    }
+
+    .slick-next {
+        right: 400px;
+    }
+
+    .slick-slide img {
+        width: 300px;
+        height: 300px;
+    }
 }
