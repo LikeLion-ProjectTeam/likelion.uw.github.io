@@ -129,7 +129,8 @@
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .apply-button:hover {
