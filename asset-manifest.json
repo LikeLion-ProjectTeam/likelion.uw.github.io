@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/UWM/static/css/main.cb347701.css",
-    "main.js": "/UWM/static/js/main.5d07d39e.js",
+    "main.css": "/UWM/static/css/main.37eca707.css",
+    "main.js": "/UWM/static/js/main.e9b3e7eb.js",
     "static/js/453.ee08e224.chunk.js": "/UWM/static/js/453.ee08e224.chunk.js",
     "static/media/stadium.jpg": "/UWM/static/media/stadium.c6c0ccb1b9c7a1681700.jpg",
     "static/media/chaewon.png": "/UWM/static/media/chaewon.3cfa00b3c205ea1113bd.png",
+    "static/media/ikjoo.png": "/UWM/static/media/ikjoo.2664ba518919426373c3.png",
     "static/media/sooa.png": "/UWM/static/media/sooa.2d39db84980ef3d4c215.png",
+    "static/media/hyoungwoo.png": "/UWM/static/media/hyoungwoo.4599552de69783501e86.png",
     "static/media/kickoff.jpg": "/UWM/static/media/kickoff.a7fd8226f14d24e635dc.jpg",
     "static/media/yeongjun.png": "/UWM/static/media/yeongjun.aa030a08604dcabeee13.png",
     "static/media/seohee.png": "/UWM/static/media/seohee.9490dce28ce8400c44ff.png",
@@ -13,6 +15,8 @@
     "static/media/saean.png": "/UWM/static/media/saean.ed40882fb0e385f7debf.png",
     "static/media/ideathon.png": "/UWM/static/media/ideathon.1ad0f246005bc5300233.png",
     "static/media/nayun.png": "/UWM/static/media/nayun.f834af22a69f54be23d1.png",
+    "static/media/eunyeol.png": "/UWM/static/media/eunyeol.c64995b98fba79633b10.png",
+    "static/media/taehee.png": "/UWM/static/media/taehee.b44e028360338d265dfc.png",
     "static/media/dotty.jpg": "/UWM/static/media/dotty.3619280d6353cfe8d95c.jpg",
     "static/media/2024ProjectTeam.jpg": "/UWM/static/media/2024ProjectTeam.09228ca00614ddf1e73c.jpg",
     "static/media/yunji.png": "/UWM/static/media/yunji.4f6a7c41d47270d8f693.png",
@@ -22,16 +26,20 @@
     "static/media/Hackathon_Placeholder.png": "/UWM/static/media/Hackathon_Placeholder.fc5f8adb489518defa7d.png",
     "static/media/LikeLionUS.jpeg": "/UWM/static/media/LikeLionUS.fe3423d6bd7886a16813.jpeg",
     "static/media/lion.jpeg": "/UWM/static/media/lion.84b06039e8b576ba63e5.jpeg",
+    "static/media/logo.png": "/UWM/static/media/logo.db9f2f4f6a57a3c11e8a.png",
     "static/media/hari.png": "/UWM/static/media/hari.b39c2522d9216e56acf1.png",
     "static/media/beomseong.png": "/UWM/static/media/beomseong.4195b619fc4369e76dfd.png",
-    "static/media/hyoungwoo.png": "/UWM/static/media/hyoungwoo.92c6a3512ad6423255fd.png",
+    "static/media/slick.svg": "/UWM/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/UWM/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/UWM/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/UWM/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/UWM/index.html",
-    "main.cb347701.css.map": "/UWM/static/css/main.cb347701.css.map",
-    "main.5d07d39e.js.map": "/UWM/static/js/main.5d07d39e.js.map",
+    "main.37eca707.css.map": "/UWM/static/css/main.37eca707.css.map",
+    "main.e9b3e7eb.js.map": "/UWM/static/js/main.e9b3e7eb.js.map",
     "453.ee08e224.chunk.js.map": "/UWM/static/js/453.ee08e224.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb347701.css",
-    "static/js/main.5d07d39e.js"
+    "static/css/main.37eca707.css",
+    "static/js/main.e9b3e7eb.js"
   ]
 }
