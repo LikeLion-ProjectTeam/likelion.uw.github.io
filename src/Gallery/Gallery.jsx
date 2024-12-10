@@ -1,5 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
+import styled from "styled-components";
+
 import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
@@ -11,9 +13,8 @@ import kickoff from "../Assets/Gallery/kickoff.jpg";
 import likelionus from "../Assets/Gallery/LikeLionUS.jpeg";
 import logo from "../Assets/Gallery/logo.jpeg";
 import lion from "../Assets/Gallery/lion.jpeg";
-import stadium from "../Assets/Gallery/stadium.jpg";
 
-const images = [dotty, kickoff, likelionus, logo, lion, stadium];
+const images = [dotty, kickoff, likelionus, logo, lion];
 
 const Gallery = () => {
     const settings = {
@@ -24,6 +25,9 @@ const Gallery = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         waitForAnimate: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        dotsClass: "slick-dots",
     };
 
     return (
@@ -32,7 +36,7 @@ const Gallery = () => {
                 <Fade cascade fraction={0.2} damping={0.2} delay={100}>
                     <h1>Gallery</h1>
 
-                    <div className="slideshow-container">
+                    <div>
                         <Slider {...settings}>
                             {images.map((image, index) => (
                                 <div key={index}>

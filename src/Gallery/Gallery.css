@@ -41,6 +41,8 @@
     border-radius: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
+    position: relative;
+    top: 70px;
 }
 
 .gallery-button:hover {
@@ -67,11 +69,54 @@
     transform: scale(1.1);
 }
 
-.slideshow-container {
-    position: relative;
+/* .slider-container {
+    기존 코드를 반응형으로 변경
     width: 500px;
-    height: 500px;
-    margin: -20px auto;
+    height: 400px;
+    margin: 0 auto;
     margin-bottom: 30px;
     overflow: hidden;
+    aspect-ratio: 1;
+    background: #eca0a0;
+} */
+
+.gallery-content img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.slick-prev,
+.slick-next {
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slick-prev::before,
+.slick-next::before {
+    font-size: 30px;
+    color: #a9a9a6;
+}
+
+.slick-prev {
+    left: 300px;
+}
+
+.slick-next {
+    right: 300px;
+}
+
+.slick-slide img {
+    display: block;
+    margin: 0 auto;
+}
+
+.slick-dots {
+    position: absolute;
+    /* margin-bottom: -10px; */
+    width: 100%;
+    text-align: center;
 }
