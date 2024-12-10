@@ -1,17 +1,17 @@
 :root {
   --primary-color: #c5050c;
   --hover-color: #c5050c;
-  --text-color: #ffffff;
+  --text-color: #030303;
 }
 
 .header {
   position: sticky;
   top: 0;
-  background: linear-gradient(to bottom, var(--primary-color), rgba(255, 255, 255, 0));
-  padding: 20px;
+  /* background: linear-gradient(to middle, var(--primary-color), rgba(255, 255, 255, 0)); */
+  padding: 25px;
   z-index: 1000;
   transition: background 0.3s ease, box-shadow 0.3s ease;
-  backdrop-filter: blur(1px); /* For additional smoothness */
+  backdrop-filter: blur(2px); /* For additional smoothness */
 }
 
 .logo-container {
@@ -77,7 +77,7 @@
 }
 
 .header nav ul li:hover {
-  color: #000;
+  color: #c5050c;
   transform: translateY(-2px);
 }
 
