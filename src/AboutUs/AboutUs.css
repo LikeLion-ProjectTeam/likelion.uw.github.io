@@ -46,16 +46,13 @@
     margin-bottom: -20px;
 }
 
-.intro {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.intro span {
-    color: #c5050c;
-    font-weight: bold;
+.logo-image {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: -10px;
 }
 
 .slogan {
@@ -205,6 +202,10 @@
     .apply-message {
         font-size: 1.2rem;
     }
+
+    .logo-image {
+        width: 350px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -246,5 +247,9 @@
 
     .apply-message {
         font-size: 1.1rem;
+    }
+
+    .logo-image {
+        width: 300px;
     }
 }

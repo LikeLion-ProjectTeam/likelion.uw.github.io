@@ -3,6 +3,8 @@ import "./AboutUs.css";
 import { ReactTyped } from "react-typed";
 import { Fade } from "react-awesome-reveal";
 
+import logo from "../Assets/AboutUs/logo.png";
+
 const AboutUs = () => {
     return (
         <div className="about-us">
@@ -23,9 +25,11 @@ const AboutUs = () => {
                         </h1>
                     </header>
                     <div className="description">
-                        <p className="intro">
-                            Introducing LikeLion <span>UW-Madison</span>
-                        </p>
+                        <img
+                            src={logo}
+                            alt="LikeLion UW-Madison Logo"
+                            className="logo-image"
+                        />
                         <h2 className="slogan">
                             <span className="slogan-word">Create</span>
                             <span className="bullet">•</span>
