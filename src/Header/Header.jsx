@@ -1,6 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import "./Header.css";
+import logo from "../Assets/AboutUs/logo.png";
 
 const Header = () => {
   const location = useLocation();
@@ -22,6 +23,9 @@ const Header = () => {
   return (
     <header className="header">
       <nav>
+        <div className="logo-container">
+          <img src={logo} alt="Logo" className="logo" />
+        </div>
         <ul>
           <li onClick={() => scrollToSection("about-us")}>About Us</li>
           <li onClick={() => scrollToSection("story")}>Story</li>
