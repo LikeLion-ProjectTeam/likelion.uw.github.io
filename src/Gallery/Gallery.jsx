@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
-import styled from "styled-components";
 
 import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
@@ -26,9 +25,11 @@ const Gallery = () => {
         slidesToScroll: 1,
         waitForAnimate: false,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3000,
         dotsClass: "slick-dots",
     };
+
+    const [isPressed, setIsPressed] = useState(false);
 
     return (
         <div className="gallery">
@@ -49,7 +50,15 @@ const Gallery = () => {
                         </Slider>
                     </div>
 
-                    <Link to="/Gallery_List" className="gallery-button">
+                    <Link
+                        to="/Gallery_List"
+                        className={`gallery-button ${
+                            isPressed ? "pressed" : ""
+                        }`}
+                        onMouseDown={() => setIsPressed(true)}
+                        onMouseUp={() => setIsPressed(false)}
+                        onMouseLeave={() => setIsPressed(false)} // 마우스가 버튼 밖으로 나갈 경우 초기화
+                    >
                         <span className="gallery-word">See more</span>
                     </Link>
                 </Fade>
