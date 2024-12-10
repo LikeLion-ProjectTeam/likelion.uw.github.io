@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Masonry from "react-masonry-css";
 import Modal from "react-modal";
 import { Fade } from "react-awesome-reveal";
@@ -18,6 +18,10 @@ Modal.setAppElement("#root");
 const Gallery_List = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [currentImage, setCurrentImage] = useState(null);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const openModal = (image) => {
         setCurrentImage(image);
