@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 // Import all profile images
 import chaewon from "../Assets/Profile/chaewon.png";
 import yeongjun from "../Assets/Profile/yeongjun.png";
-import sijun from "../Assets/Profile/sijun.png";
+import sijun from "../Assets/Profile/Sijun.png";
 import taenam from "../Assets/Profile/taenam.png";
 import sunghyeon from "../Assets/Profile/sunghyeon.png";
 import sooa from "../Assets/Profile/sooa.png";
@@ -17,6 +17,8 @@ import beomseong from "../Assets/Profile/beomseong.png";
 import saean from "../Assets/Profile/saean.png";
 import yunji from "../Assets/Profile/yunji.png";
 import ikjoo from "../Assets/Profile/ikjoo.png";
+import taehee from "../Assets/Profile/taehee.png";
+import eunyeol from "../Assets/Profile/eunyeol.png";
 
 const Team = () => {
   const [activeTeam, setActiveTeam] = useState("operation");
@@ -134,28 +136,46 @@ const Team = () => {
     },
     dsTeam: {
       title: "Data Science Team",
-      members: [
-        {
-          name: "Beomseong Kim",
-          major: "B.A. Data Science",
-          year: "Senior",
-          image: beomseong,
-          linkedin: "https://www.linkedin.com/in/beomseong-kim/",
-        },
-        {
-          name: "Ikjoo Oh",
-          major: "B.S. Data Science",
-          year: "Sophomore",
-          image: ikjoo,
-        },
-        {
-          name: "Yunji Lee",
-          major: "B.S. Data Science",
-          year: "Junior",
-          image: yunji,
-        },
-      ],
-    },
+      roles: {
+        Mentor: [
+          {
+            name: "Taehee Kim",
+            major: "B.S. Data Science",
+            year: "Alumni",
+            image: taehee,
+            linkedin: "https://www.linkedin.com/in/arden-kim/",
+          },
+          {
+            name: "Eunyeol Oh",
+            major: "B.S. Data Science",
+            year: "Alumni",
+            image: eunyeol,
+            linkedin: "https://www.linkedin.com/in/john-oh-2a1490222/",
+          },
+        ],
+        TeamMembers: [
+          {
+            name: "Beomseong Kim",
+            major: "B.A. Data Science",
+            year: "Senior",
+            image: beomseong,
+            linkedin: "https://www.linkedin.com/in/beomseong-kim/",
+          },
+          {
+            name: "Ikjoo Oh",
+            major: "B.S. Data Science",
+            year: "Sophomore",
+            image: ikjoo,
+          },
+          {
+            name: "Yunji Lee",
+            major: "B.S. Data Science",
+            year: "Junior",
+            image: yunji,
+          },
+        ],
+      },
+    },    
     lecTeam: {
       title: "Lecture Team",
       members: [
