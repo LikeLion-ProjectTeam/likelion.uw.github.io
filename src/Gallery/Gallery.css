@@ -33,113 +33,6 @@
     background-color: #fd7e14;
 }
 
-.gallery-grid {
-    display: flex;
-    margin-left: -30px;
-    width: auto;
-}
-
-.gallery-grid_column {
-    padding-left: 30px;
-    background-clip: padding-box;
-}
-
-.gallery-item {
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.gallery-item:hover img {
-    transform: scale(1.05);
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 1000;
-}
-
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    outline: none;
-}
-
-.modal-image {
-    max-width: 90vw;
-    max-height: 90vh;
-}
-
-.close-button {
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 0;
-    line-height: 1;
-    opacity: 0.7;
-    color: #fff;
-}
-
-.prev-button,
-.next-button {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-size: 3rem;
-    color: #fff;
-    cursor: pointer;
-    padding: 0 -10px;
-    line-height: 1;
-    opacity: 0.7;
-}
-
-.prev-button {
-    left: -30px;
-}
-
-.next-button {
-    right: -30px;
-}
-
-.prev-button:hover,
-.next-button:hover {
-    opacity: 1;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 .gallery-button {
     background: #fd7e14;
     padding: 15px 30px;
@@ -174,10 +67,11 @@
     transform: scale(1.1);
 }
 
-.slideshow-image {
-    width: 400px;
-    height: 400px;
-    margin-bottom: 50px;
-    object-fit: cover;
-    transition: opacity 1s ease-in-out;
+.slideshow-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: -20px auto;
+    margin-bottom: 30px;
+    overflow: hidden;
 }
