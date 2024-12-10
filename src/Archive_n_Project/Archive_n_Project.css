@@ -1,51 +1,153 @@
+/* General archive section style */
 .archive {
-    padding: 50px;
-    background-color: #f1f1f1;
-    text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px 20px;
+  box-sizing: border-box;
   }
+
   .archive h1 {
-    color: #fd7e14;;
+    color: #fd7e14;
+    font-size: 3.5rem;
     margin-bottom: 20px;
+    text-align: center;
+    position: relative;
   }
+
   .archive p {
     font-size: 1.2rem;
     color: #555;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
-  .archivelink {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #ff6600; 
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .archivelink:hover {
-    background-color: #e05500; 
-  }
+  /* slider container */
+.archive-slider-container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 20px auto;
+  padding: 20px 0;
+  background-color: #ffffff;
+  text-align: center; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-  .archive-images {
-    display: flex;
-    justify-content: center; 
-    gap: 20px; 
-    margin-top: 20px;
-  }
-  
-  .archive-image {
-    width: 200px; 
-    height: 200px; 
-    object-fit: cover; 
-    border-radius: 5px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease; 
-  }
-  
-  .archive-image:hover {
-    transform: scale(1.05); 
-  }
+/* slick slider customization */
+.archive-slider-container .slick-list {
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.archive-slider-container .slick-track {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.archive-item:hover {
+  transform: scale(1.05);
+} */
+
+.archive-slider {
+  width: 100%;
+  margin: 0 auto;
+} */
+
+/* slider items styles */
+.slider-item {
+  text-align: center; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  padding: 10px; 
+  margin: 0 10px;
+}
+
+.slider-image {
+  width: 250px; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 0 auto; 
+}
+
+.slider-caption {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.slider-image:hover {
+  transform: scale(1.05);
+}
+
+/* custom slider arrows */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem; /* Arrow size */
+  color: #fd7e14; /* Arrow color */
+  z-index: 2; /* Make sure arrows are on top */
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.custom-arrow:hover {
+  opacity: 1; /* Fully visible on hover */
+}
+
+.custom-prev-arrow {
+  left: -50px; /* Adjust left arrow position */
+}
+
+.custom-next-arrow {
+  right: -50px; /* Adjust right arrow position */
+}
+
+/* slider dots */
+.archive-slider-container .slick-dots {
+  bottom: -5px;
+  text-align: center;
+}
+
+.archive-slider-container .slick-dots li button:before {
+  font-size: 10px;
+  color: #fd7e14;
+}
+
+.archive-slider-container .slick-dots li.slick-active button:before {
+  color: #ff6600;
+}
+
+/* link to archive */
+.archivelink {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #c5050c, #fd7e14);
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.archivelink:hover {
+  background-color: #e05500;
+  transform: scale(1.05);
+}
   
