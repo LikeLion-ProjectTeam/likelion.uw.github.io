@@ -14,11 +14,14 @@
 }
 
 .typed-container {
+    /* background: #666; */
     white-space: nowrap;
+    text-align: center;
+    margin-left: -110px;
 }
 
 .typed-container h1 {
-    font-size: 6rem;
+    font-size: 5.8rem;
     color: #333;
     margin: 0;
     line-height: 1;
@@ -30,8 +33,9 @@
 }
 
 .typed-text {
+    text-align: justify;
     display: inline-block;
-    min-width: 6ch;
+    min-width: 8ch;
     color: #c5050c;
     font-weight: bold;
 }
@@ -42,16 +46,13 @@
     margin-bottom: -20px;
 }
 
-.intro {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.intro span {
-    color: #c5050c;
-    font-weight: bold;
+.logo-image {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: -10px;
 }
 
 .slogan {
@@ -67,6 +68,23 @@
     cursor: pointer;
     display: inline-block;
     padding: 0 5px;
+    position: relative;
+}
+
+.slogan-word::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fd7e14;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.slogan-word:hover::after {
+    width: 50%;
 }
 
 .slogan-word:hover {
@@ -86,7 +104,8 @@
     color: #555;
     line-height: 1.8;
     margin-bottom: 30px;
-    text-align: center;
+    text-align: justify;
+    /* text-align: center; */
 }
 
 .end-text {
@@ -94,6 +113,8 @@
     color: #fd7e14;
     font-weight: 500;
     text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
 }
 
 .apply {
@@ -101,7 +122,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
 }
 
 @keyframes gradientAnimation {
@@ -117,19 +137,20 @@
 }
 
 .apply-button {
-    background: linear-gradient(135deg, #c5050c, #fd7e14);
+    background: #fd7e14;
     padding: 15px 30px;
     margin: 10px;
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .apply-button:hover {
     transform: translateY(-3px);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(135deg, #c5050c, #fd7e14, #c5050c);
+    background: linear-gradient(135deg, #fd7e14, #fea861, #fd7e14);
     background-size: 200% 200%;
     animation: gradientAnimation 5s ease infinite;
 }
@@ -158,8 +179,17 @@
 }
 
 @media (max-width: 768px) {
+    .typed-container {
+        margin-left: 0;
+        padding-left: 10px;
+    }
+
     .typed-container h1 {
         font-size: 3rem;
+    }
+
+    .typed-text {
+        min-width: 6.6ch;
     }
 
     .intro {
@@ -167,7 +197,7 @@
     }
 
     .slogan {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .main-text {
@@ -176,5 +206,67 @@
 
     .end-text {
         font-size: 1.5rem;
+    }
+
+    .apply-button {
+        padding: 10px 20px;
+    }
+
+    .apply-word {
+        font-size: 1.3rem;
+    }
+
+    .apply-message {
+        font-size: 1.2rem;
+    }
+
+    .logo-image {
+        width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .typed-container {
+        margin-left: 0;
+    }
+
+    .typed-container h1 {
+        font-size: 2rem;
+    }
+
+    .typed-text {
+        min-width: 6.6ch;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+    }
+
+    .slogan {
+        font-size: 1rem;
+    }
+
+    .main-text {
+        font-size: 0.9rem;
+    }
+
+    .end-text {
+        font-size: 1.2rem;
+    }
+
+    .apply-button {
+        padding: 10px 20px;
+    }
+
+    .apply-word {
+        font-size: 1.1rem;
+    }
+
+    .apply-message {
+        font-size: 1.1rem;
+    }
+
+    .logo-image {
+        width: 300px;
     }
 }
