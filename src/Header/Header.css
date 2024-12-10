@@ -8,7 +8,9 @@
   position: sticky;
   top: 0;
   /* background: linear-gradient(to middle, var(--primary-color), rgba(255, 255, 255, 0)); */
-  padding: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
   z-index: 1000;
   transition: background 0.3s ease, box-shadow 0.3s ease;
   backdrop-filter: blur(2px); /* For additional smoothness */
